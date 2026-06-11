@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LCD Tactical HUD</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <div class="screen-shell" id="screenShell">
+      <main class="hud-screen" id="hudScreen" aria-label="Panel LCD animado 1024 por 768">
+        <div class="background-grid" aria-hidden="true"></div>
+
+        <section class="title-panel glass drift-a" aria-label="Cabecera del sistema">
+          <div class="title-glyph">NPP71VCT RC/ASYSTM SYMATIC</div>
+          <div class="subtitle-glyph">LPCTNIP /VT1CTYSDP</div>
+          <div class="title-scan"></div>
+        </section>
+
+        <section class="left-stack" id="leftStack" aria-label="Modulos circulares"></section>
+
+        <section class="scan-area" id="scanArea" aria-label="Lecturas centrales"></section>
+
+        <section class="lower-panel glass drift-b" aria-label="Panel inferior de control">
+          <div class="panel-heading">TCT RCU/TEST</div>
+          <div class="lower-left">
+            <div class="switch-title">TCT RCU/TEST</div>
+            <div class="switch-grid" id="switchGrid"></div>
+            <div class="switch-title second">TCT RCU/TEST APX5</div>
+            <div class="switch-grid compact" id="switchGridTwo"></div>
+          </div>
+          <div class="lower-readouts" id="lowerReadouts"></div>
+        </section>
+
+        <section class="tower-panel glass drift-c" aria-label="Columnas de actividad">
+          <div class="tower-columns" id="towerColumns"></div>
+          <div class="tower-footer">
+            <span>T3 18</span>
+            <span>T3 19</span>
+            <span>T3 20</span>
+          </div>
+          <div class="micro-dials" id="microDials"></div>
+        </section>
+
+        <div class="vignette" aria-hidden="true"></div>
+        <div class="scanlines" aria-hidden="true"></div>
+        <div class="pixel-mask" aria-hidden="true"></div>
+        <div class="lcd-flicker" aria-hidden="true"></div>
+      </main>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
