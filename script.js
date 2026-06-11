@@ -11,7 +11,7 @@
   const towerColumns = document.getElementById("towerColumns");
   const microDials = document.getElementById("microDials");
 
-  const glyphChars = "ACDEHJKLMNPQRSTVWXYZ0123456789/\\[]<>+-";
+  const glyphChars = "ACDEHJKLMNPQRSTVWXYZ0123456789";
   const state = {
     needles: [],
     tinyNeedles: [],
@@ -90,7 +90,7 @@
 
       const caption = document.createElement("div");
       caption.className = "lane-caption";
-      caption.textContent = i === 0 ? `${glyph(8)} RUN TRACE` : `${glyph(7)} APDN-SALT`;
+      caption.textContent = i === 0 ? `${glyph(8)} RUN TRACE` : `${glyph(7)} APDN SALT`;
 
       shellEl.append(fill, empty);
       lane.append(shellEl, caption);
@@ -139,7 +139,7 @@
 
     const subtitle = document.createElement("div");
     subtitle.className = "scan-subtitle";
-    subtitle.textContent = "N41TCT3/AE BPAC N7AECP";
+    subtitle.textContent = "N41TCT3AE BPAC N7AECP";
 
     const numbers = document.createElement("div");
     numbers.className = "numbers-row";

@@ -16,8 +16,8 @@
   --blue: #008cff;
   --amber: #bdff69;
   --dark-line: rgba(2, 10, 38, 0.82);
-  --ui-font: "Segoe UI", "Lucida Console", Consolas, monospace;
-  --digit-font: "Automatron", "Segoe UI", monospace;
+  --ui-font: "Automatron";
+  --digit-font: "Automatron";
 }
 
 * {
